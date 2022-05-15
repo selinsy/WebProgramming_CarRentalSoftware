@@ -18,7 +18,6 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -315,7 +314,7 @@ section{
     font-size:  1.5rem;
     line-height: 1.8;
     color:var(--light-color);
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 .search .box-container{
@@ -369,60 +368,13 @@ section{
     font-weight: 500;
 }
 .input-box input{
-    padding: 7px;
+    padding: 1rem 1rem;
     outline: none;
     border: none;
     background: #eeeff1;
     border-radius: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #000000;
-
-}
-.blogs .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-}
-.blogs .box-container .box{
-    overflow: hidden;
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow);
-    background: #fff;
-}
-.blogs .box-container .box img{
-    height: 25rem;
-    width: 100%;
-    object-fit: cover;
-}
-.blogs .box-container .box .content{
-    padding: 2rem;
-}
-.blogs .box-container .box .content .icons{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 1.5rem;
-    margin-bottom: 1rem;
-    border-bottom: var(--border);
-}
-.blogs .box-container .box .content .icons a{
-    color: var(--light-color);
-    font-size: 1.5rem;
-}
-.blogs .box-container .box .content .icons a:hover{
-    color: var(--black);
-}
-.blogs .box-container .box .content  h3{
-    line-height: 1.8;
-    color:var(--black );
-    font-size: 2.2rem;
-    padding: .5rem 0;
-}
-.blogs .box-container .box .content  p{
-    line-height: 1.8;
-    color:var(--light-color );
-    font-size: 1.5rem;
-    padding: .5rem 0;
 
 }
 .review .review-slider{
@@ -462,9 +414,91 @@ section{
     color: var(--green);
     font-size: 1.7rem;
 }
+.container {
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+.addcar .container h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+    
+}
+
+.addcar{
+    background: url(../image/road3.jpg);
+    background-size: cover;
+    padding: 3rem 3rem;
+    height: auto;
+    text-align: center;
+}
+#addcarOpaque{
+   background-color: rgba(255,255,255,0.2); 
+   padding: 3rem 2rem;
+   border-radius: 0.5rem;
+   margin-bottom: .7rem 0;
+}
+.form-control{
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    line-height: 0.5;
+    color: #000000;
+    background-color: #eee;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #666;
+}
+textarea{
+    font-family: Arial;
+}
+input[type="submit"]{
+    cursor:pointer;
+    background:none;
+    font-size: 2rem;
+    padding:.8rem 3rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:#eee;
+    margin-top: 1rem;
+
+}
+input[type="submit"]:hover{
+    background: var(--black);
+    color:#fff;
+
+}
+#review {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #review td, #review th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 1.5rem;
+  }
+  
+  #review tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #review tr:hover {background-color: #ddd;}
+  
+  #review th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #17A589;
+    color: white;
+    font-size: 1.5rem;
+  }
 
 
-
+.form-control:hover{
+    background: rgb(219, 221, 220);
+    color:#000000;
+}
 .footer {
     background: #fff;
 }
